@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.ui.theme" value="simple" />
+
+	<package name="myPack" extends="struts-default">
+
+		<action name="eventInsertAction" class="com.ca.actions.EventInsertAction">
+			<result name="input">create_event.jsp</result>
+			<result name="success">Success.jsp</result>
+			<result name="error">Error.jsp</result>
+		</action>
+
+		<action name="expensesAction" class="com.ca.actions.ExpensesAction">
+			<result name="input">expenses.jsp</result>
+			<result name="success">expenses.jsp</result>
+			<result name="error">Error.jsp</result>
+		</action>
+
+		<action name="expensesViewAction" class="com.ca.actions.ExpensesViewAction">
+			<result name="input">expenses.jsp</result>
+			<result name="success">expenses.jsp</result>
+			<result name="error">Error.jsp</result>
+		</action>
+
+		<action name="addUsersActionByAdmin" class="com.ca.actions.AddUserByAdminAction">
+			<result name="input">adduser.jsp</result>
+			<result name="success">Success.jsp</result>
+			<result name="error">Error.jsp</result>
+		</action>
+
+		<action name="viewUsersAdminPanel" class="com.ca.actions.RetrieveUsersForAdminAction">
+			<result name="input">viewusers.jsp</result>
+			<result name="success">viewusers.jsp</result>
+			<result name="error">Error.jsp</result>
+		</action>
+
+		<action name="delete" class="com.ca.actions.DeleteUserForAdminAction">
+			<result name="input">viewusers.jsp</result>
+			<result name="success">viewusers.jsp</result>
+			<result name="error">Error.jsp</result>
+		</action>
+
+		<action name="getdata" class="com.ca.actions.DataForViewOrEditUsers">
+			<result name="input">viewusers.jsp</result>
+			<result name="success">updateuser.jsp</result>
+			<result name="error">Error.jsp</result>
+		</action>
+
+		<action name="UpdateUserRoleByAdmin" class="com.ca.actions.UpdateUsersByAdminAction">
+			<result name="input">updateuser.jsp</result>
+			<result name="success">viewusers.jsp</result>
+			<result name="error">Error.jsp</result>
+		</action>
+		<action name="LoginAction" class="com.ca.actions.UserLoginAction">
+			<result name="input">loginpage.jsp</result>
+			<result name="success">index.jsp</result>
+			<result name="error">Error.jsp</result>
+		</action>
+		<action name="LogoutAction" method="logout" class="com.ca.actions.UserLoginAction">
+			<result name="input">index.jsp</result>
+			<result name="success">loginpage.jsp</result>
+			<result name="error">Error.jsp</result>
+		</action>
+		
+		<action name="GetOwnData" class="com.ca.actions.UserLoginAction">
+			<result name="input">index.jsp</result>
+			<result name="success">editinfo.jsp</result>
+			<result name="error">Error.jsp</result>
+		</action>
+		
+	</package>
+</struts>

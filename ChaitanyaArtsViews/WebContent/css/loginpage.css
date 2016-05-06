@@ -1,0 +1,48 @@
+/* CSS Document */
+
+.loginpg_companyname {
+margin: auto; vertical-align:middle; text-align:center; font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif; font-size:30px; font-weight:400; color:#fff; line-height:60px;
+}
+
+.loginpg_headingtext {
+margin: 30px auto; vertical-align:middle; text-align:center; font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif; font-size:28px; font-weight:400; color:#3861b7; line-height:60px;
+}
+
+.loginbar {
+margin:20px auto; width:40%; background:#167f92; text-align:center;border-radius: 25px;
+}
+
+.username_textbox { margin:30px auto 10px auto; width:80%; height:35px; line-height:25px; background:#fff; border:1px solid #ffffff; font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif; font-size:16px; font-weight:400; color:#333333; padding:0px 10px 0px 10px; }
+.password_textbox { margin:10px auto 10px auto; width:80%; height:35px; line-height:25px; background:#fff; border:1px solid #ffffff; font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif; font-size:16px; font-weight:400; color:#333333; padding:0px 10px 0px 10px; }
+
+.loginpgcheckbox {
+position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: "";
+	background:#d7f4fd; border:1px solid #ffffff; float:left;
+}
+@media(min-width: 480px){
+.loginpgcheckbox {position: relative;
+    display: inline-block;
+	    width: 20px;
+    height: 20px;
+    content: "";
+	background:#d7f4fd; border:1px solid #ffffff; float:left;
+} 
+}
+
+.loginpg_text1 {
+margin: 0px 0px 30px 20px; text-align:center; font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif; font-size:16px; font-weight:400; color:#fff; line-height:28px; float:left;
+}
+
+.loginpg_text2 {
+margin: 0px 30px 30px 20px; text-align:center; font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif; font-size:16px; font-weight:400; color:#fff; line-height:28px; float:right;
+}
+
+.loginpg_text2 a {
+ text-align:center; font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif; font-size:16px; font-weight:400; color:#fff; line-height:28px; 
+}
+
+
